@@ -415,76 +415,71 @@ footer ul li .fab {
   margin: 0%;
 }
 
-.academy1 .academy2 {
+.academy2 {
   margin: 0;
   width: 100%;
   text-align: center;
 }
 
-.academy1 .academy2 img {
+.academy2 img {
   width: 90%;
   max-width: 600px;
 }
 
 @media screen and (min-width: 700px) {
-  .academy1{
-    /*Section3 ends*/
-    /*Section4 ends*/
+  h1 {
+    font-size: 80px;
+    font-weight: 900;
   }
-  .academy1 header {
+  header {
     height: 80px;
   }
-  .academy1 header nav {
+  header nav {
     padding-top: 10px;
     display: block;
   }
-  .academy1 header nav a {
+  header nav a {
     margin-left: 20px;
   }
-  .academy1 header .fa-bars {
+  header .fa-bars {
     display: none;
   }
-  .academy1 header .btn {
+  header .btn {
     font-size: 20px;
     font-weight: bolder;
   }
-  .academy1 .section1 {
+  .section1 {
     text-align: left;
-    padding: 150px 50px 100px 50px;
+    padding: 200px 50px 150px 50px;
     width: 100%;
     height: auto;
   }
-  .academy1 .section1 h1 {
-    font-size: 80px;
-    font-weight: 900;
-    width: 60%;
+  .section1 h1 {
     padding: 0 20px;
   }
-  .academy1 .section1 p {
+  .section1 p {
     width: 60%;
     margin: 15px 0 0 30px;
     font-size: 30px;
   }
-  .academy1 .section1 .btn {
+  .section1 .btn {
     text-align: center;
     width: 15%;
     line-height: 03;
     margin: 40px 0 0 25px;
   }
-  .academy1 .section1 .fab {
+  .section1 .fab {
     margin-top: 20px;
     padding: 20px 0 0 20px;
   }
-  .academy1 .section2 {
+  .section2 {
     padding: 40px 70px;
     text-align: center;
   }
-  .academy1 .section2 h1 {
-    font-size: 80px;
-    font-weight: 900;
+  .section2 h1 {
     padding: 0 20px;
   }
-  .academy1 .section2 .flexy {
+  .section2 .flexy {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -493,37 +488,35 @@ footer ul li .fab {
             justify-content: space-between;
     margin-top: 70px;
   }
-  .academy1 .section2 .flexy div {
+  .section2 .flexy div {
     width: 25%;
   }
-  .academy1 .section2 .flexy h3 {
+  .section2 .flexy h3 {
     margin: 20px 0 0 0;
     font-size: 30px;
     font-weight: 700;
   }
-  .academy1 .section2 .flexy p {
+  .section2 .flexy p {
     margin: 20px 0 40px 0;
     font-size: 18px;
     font-weight: 400;
   }
-  .academy1 .section3 {
+  .section3 {
     background-color: #010F25;
     padding: 100px 20px;
   }
-  .academy1 .section3 h1 {
-    font-size: 80px;
-    font-weight: 900;
+  .section3 h1 {
     color: white;
     padding-top: 50px;
     text-align: center;
   }
-  .academy1 .section3 p {
+  .section3 p {
     text-align: center;
     margin: 50px 0 50px 0;
     font-size: 30px;
     font-weight: 400;
   }
-  .academy1 .section3 .flexy2 {
+  .section3 .flexy2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -532,39 +525,40 @@ footer ul li .fab {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .academy1 .section3 .flexy2 img {
+  .section3 .flexy2 img {
     width: 40%;
     margin: auto;
     display: block;
     height: auto;
   }
-  .academy1 .section3 b {
+  .section3 b {
     font-size: 30px;
     font-weight: 700;
     text-align: left;
   }
-  .academy1 .section3 span {
+  .section3 span {
     width: 30%;
     text-align: left;
   }
-  .academy1 .section3 span h3 {
+  .section3 span h3 {
     margin: 20px 0 0 0;
     font-size: 35px;
     font-weight: 700;
   }
-  .academy1 .section3 span b {
+  .section3 span b {
     color: #24feb7;
   }
-  .academy1 .section3 span p {
+  .section3 span p {
     margin: 20px 0 0 0;
     font-size: 16px;
     text-align: left;
   }
-  .academy1 .section4 {
+  /*Section3 ends*/
+  .section4 {
     padding: 70px 20px 50px 20px;
     text-align: center;
   }
-  .academy1 .section4 div {
+  .section4 div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -576,20 +570,18 @@ footer ul li .fab {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .academy1 .section4 img {
+  .section4 img {
     width: 40%;
     margin: 80px 0 30px 0;
   }
-  .academy1 .section4 h1 {
-    font-size: 80px;
-    font-weight: 900;
+  .section4 h1 {
     padding-top: 50px;
     text-align: center;
   }
-  .academy1 .section4 h1 span {
+  .section4 h1 span {
     color: white;
   }
-  .academy1 .section4 p {
+  .section4 p {
     font-size: 30px;
     font-weight: 400;
     margin: auto;
@@ -597,28 +589,29 @@ footer ul li .fab {
     text-align: left;
     padding: 0 0px 0 10px;
   }
-  .academy1 .section4 p small {
+  .section4 p small {
     font-size: 16px;
     text-align: left;
     display: block;
     color: #bfc0c0;
     margin: 30px 0 20px 0;
   }
-  .academy1 .section5 {
+  /*Section4 ends*/
+  .section5 {
     text-align: center;
     padding: 100px 10px;
   }
-  .academy1 .section5 h1 {
+  .section5 h1 {
     font-size: 80px;
     font-weight: 900;
     margin: auto;
     width: 70%;
   }
-  .academy1 .section5 h1 span {
+  .section5 h1 span {
     color: #24feb7;
     margin-top: 30px;
   }
-  .academy1 .section5 .flexy_3 {
+  .section5 .flexy_3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -629,7 +622,7 @@ footer ul li .fab {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .academy1 .section5 .flexy_3 span {
+  .section5 .flexy_3 span {
     width: 25%;
     border: solid white 1px;
     border-radius: 15px;
@@ -638,16 +631,16 @@ footer ul li .fab {
     font-weight: 300;
     color: #fff;
   }
-  .academy1 .section5 .flexy_3 span p {
+  .section5 .flexy_3 span p {
     line-height: 2;
   }
-  .academy1 .section5 .flexy_3 span strong {
+  .section5 .flexy_3 span strong {
     font-size: 18px;
     font-weight: 700;
     margin-top: 50px;
     display: block;
   }
-  .academy1 .section6 .flexy3 {
+  .section6 .flexy3 {
     padding: 20px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -659,24 +652,24 @@ footer ul li .fab {
     margin: auto;
     border-radius: 40px;
   }
-  .academy1 .section6 img {
+  .section6 img {
     display: block;
     width: 15%;
   }
-  .academy1 .section6 span h2 {
+  .section6 span h2 {
     font-size: 50px;
     font-weight: 900;
     padding-bottom: 20px;
   }
-  .academy1 .section6 span p {
+  .section6 span p {
     font-size: 18px;
     font-weight: 500;
   }
-  .academy1 .section6 span a {
+  .section6 span a {
     display: block;
     width: 30%;
   }
-  .academy1 footer {
+  footer {
     padding: 30px  0 20px 0;
     text-align: left;
     display: -webkit-box;
@@ -686,7 +679,7 @@ footer ul li .fab {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .academy1 footer img {
+  footer img {
     width: 10%;
   }
 }
