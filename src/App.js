@@ -4,6 +4,7 @@ import AcademyPage from './pages/Academy';
 import CommunityPage from './pages/Community';
 import GetStartedPage from './pages/GetStarted';
 import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
 import "./scss/style.scss"
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
           <GetStartedPage />
         </Route>
       </Switch>
-      <div style={{ fontSize: "48px", color: "red" }}>Ademola</div>
+      <Footer/>
     </div>
   );
 }
