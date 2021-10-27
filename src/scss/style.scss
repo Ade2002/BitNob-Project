@@ -6,6 +6,32 @@ $bg-color:#010F25;
 $alt-bg-color: #000917;
 $btn-color: #010544;
 
+@mixin btn_mobile {
+    background-color: $alt-color;
+    border-radius: 5px;
+    color: $btn-color;
+    padding: 0.5em 1em;
+    margin: top 0;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin btn_desktop {
+    background-color: $alt-color;
+    border-radius: 5px;
+    color: $btn-color;
+    padding: 0.8em 2em;
+    margin-top: 0;
+
+    &:hover {
+        text-decoration: none;
+        text-align: center;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -53,62 +79,62 @@ h1 {
 }
 
 header {
-    font: {
-        weight: 300;
-        size: 18px;
-    }
-
-    position: fixed;
-    background-color:$bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 1em 0.5em;
     width: 100%;
-    z-index: 100;
-    height: 70px;
-    padding: 1em 0 1em 0;
-    @include flex;
+    position: fixed;
+    background-position: center;
+    background-color: $bg-color;
 
-    img {
-        width: 50%;
-        max-width: 300px;
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
-    .fa-times {
+    .logo {
+        width: 50px;
+    }
+
+    .nav {
         display: none;
-    }
+        position: absolute;
+        flex-direction: column;
+        top: 4em;
+        background-color: $bg-color;
+        justify-content: space-between;
+        align-items: center;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 0 0 2em 0;
 
-    .fa-bars {
-        width: 10%;
-        font-size: 30px;
-        height: 20px
-    }
-
-    .btn {
-        background-color: $alt-color;
-            border-radius: 5px;
+        a {
+            margin: 1em 0 0 0;
             color: white;
-            padding: 2em 3em;
-    
-
-            &:hover {
-                text-decoration: none;
-                color: white;
-            }
-        font: {
-            size: 11px;
-            weight: 700;
+            display: inline;
+            font-weight: 900;
+            font-size: 16px;
+            text-align: left;
         }
 
-        text-align: center;
-        margin-top: 10px;
-        color: $btn-color;
-        margin-left: 10px;
     }
 
-    span {
-        @include flex;
+    .btn-green {
+        @include btn_mobile();
     }
 
-    nav {
+    .closebtn {
+        transition: width 0.8s ease-in-out;
+        cursor: default;
+        font-size: 45px;
         display: none;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
@@ -463,34 +489,65 @@ footer {
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
     h1 {
         font-size: 80px;
         font-weight: 900;
     }
 
     header {
-        height: 80px;
+        padding: 1em 3em;
 
-        nav {
-            padding-top: 10px;
-            display: block;
+        .logo {
+            width: 130px;
+        }
+
+        .nav {
+            position: relative;
+            display: inline;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 1em 0 0 0;
+            top: 0;
+            background-color: transparent;
+            left: 0;
+            width: auto;
+            box-shadow: none;
 
             a {
-                margin-left: 20px;
+                margin: 0;
+                color: white;
+                display: inline;
+                font-weight: 900;
+                font-size: 16px;
+                text-align: left;
+                padding: 0 2em;
+
+                &:hover {
+                    text-decoration: none;
+                    color: #0271FB;
+                }
             }
+
         }
 
-        .fa-bars {
+        .btn-green {
+            @include btn_desktop();
+        }
+
+        .closebtn {
+            transition: width 0.8s ease-in-out;
+            cursor: default;
+            font-size: 45px;
             display: none;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
 
-        .btn {
-            font: {
-                size: 20px;
-                weight: bolder;
-            }
-
+        .hamburger {
+            display: none;
         }
     }
 
