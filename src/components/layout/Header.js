@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import logo from '../../img/logo-no-back-01-1536x531.png'
 function Header() {
     return <header className='header'>
-            <Link to='/'>
+        <span className='logoNavcontainer'>
+        <Link to='/'>
                 <img src={logo} alt="Logo" className='logo' />
             </Link>
             <nav className="nav">
@@ -10,6 +11,7 @@ function Header() {
                 <Link to='/academy'>Academy</Link>
                 <Link to='/community'>Community</Link>
             </nav>
+        </span>
             <Link name="#" id="" className="btn btn-green" role="button" to='/get-started'> Get Started </Link>
             <span className='hamburger'>
                 <i className='closebtn fa-times'>&times;</i>

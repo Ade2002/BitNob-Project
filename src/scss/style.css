@@ -52,11 +52,6 @@ header {
   background-color: #010F25;
 }
 
-header:hover {
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 header .logo {
   width: 50px;
 }
@@ -456,6 +451,15 @@ footer ul li .fab {
   header {
     padding: 1em 3em;
   }
+  header .logoNavcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+  }
   header .logo {
     width: 130px;
   }
@@ -484,11 +488,11 @@ footer ul li .fab {
     font-weight: 900;
     font-size: 16px;
     text-align: left;
-    padding: 0 2em;
+    padding: 0 1em;
   }
   header .nav a:hover {
     text-decoration: none;
-    color: #0271FB;
+    color: #24feb7;
   }
   header .btn-green {
     background-color: #24feb7;
@@ -496,12 +500,17 @@ footer ul li .fab {
     color: #010544;
     padding: 0.8em 2em;
     margin-top: 0;
+    font-weight: 600;
+    font-size: 15px;
   }
   header .btn-green:hover {
     text-decoration: none;
     text-align: center;
-    -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    padding: 0.8em 2.1em;
+    -webkit-box-shadow: 0px 16px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 16px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    font-size: 18px;
   }
   header .closebtn {
     -webkit-transition: width 0.8s ease-in-out;
