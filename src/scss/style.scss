@@ -1,5 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-$font-stack:'Quicksand'sans-serif;
+$font-stack: 'Quicksand' sans-serif;
 $text-color:white;
 $alt-color:#24feb7;
 $bg-color:#010F25;
@@ -24,19 +25,48 @@ $btn-color: #010544;
     color: $btn-color;
     padding: 0.8em 2em;
     margin-top: 0;
+
     font: {
         weight: 600;
         size: 15px;
     }
+
     &:hover {
         text-decoration: none;
         text-align: center;
         padding: 0.8em 2.1em;
-        box-shadow:  0px 16px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 16px rgba(0, 0, 0, 0.25);
+
         font: {
             weight: 600;
             size: 18px;
         }
+    }
+}
+
+@mixin footer_mobile {
+    font-family: $font-stack;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2.5em 0;
+    width: 100%;
+    background-color: #010F25;
+    color: silver;
+    img{
+        width: 80px;
+        margin-bottom: 3em;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 800;
+        color: #fff;
+    }
+
+    a {
+        color: silver;
     }
 }
 
@@ -45,7 +75,11 @@ $btn-color: #010544;
     margin: 0;
     padding: 0;
 }
-
+html{
+    font: {
+        family: $font-stack;
+    }
+}
 body {
     box-sizing: border-box;
     text-decoration: none;
@@ -96,6 +130,7 @@ header {
     position: fixed;
     background-position: center;
     background-color: $bg-color;
+
     .logo {
         width: 50px;
     }
@@ -122,7 +157,6 @@ header {
             font-size: 16px;
             text-align: left;
         }
-
     }
 
     .btn-green {
@@ -426,34 +460,7 @@ header {
 /*Section6 ends*/
 
 footer {
-    padding: 70px 0 50px 0;
-    width: 100%;
-    height: auto;
-    background-color: #010F25;
-    text-align: center;
-
-    ul {
-        margin: 30px 0;
-
-        h4 {
-            margin-bottom: 30px;
-            color: #FFF;
-            font-size: 18px;
-            font-weight: 400;
-        }
-
-        li {
-            line-height: 2;
-
-            a {
-                color: rgb(173, 173, 173);
-            }
-
-            .fab {
-                color: $alt-color;
-            }
-        }
-    }
+    @include footer_mobile();
 }
 
 /*Academy Begins Here*/
@@ -500,10 +507,12 @@ footer {
 
     header {
         padding: 1em 3em;
-        .logoNavcontainer{
+
+        .logoNavcontainer {
             @include flex();
             width: 50%;
         }
+
         .logo {
             width: 130px;
         }
@@ -519,6 +528,10 @@ footer {
             left: 0;
             width: auto;
             box-shadow: none;
+
+            font: {
+                weight: 700;
+            }
 
             a {
                 margin: 0;
@@ -822,10 +835,7 @@ footer {
 
     footer {
         padding: 30px 0 20px 0;
-
-        text-align: left;
         display: flex;
-        justify-content: space-evenly;
 
         img {
             width: 10%;
