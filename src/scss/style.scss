@@ -496,10 +496,6 @@ header {
 
 footer {
     @include footer_mobile();
-}:fourth-child>li{
-    display: flex;
-    justify-content: space-between;
-    color: hotpink;
 }
 
 /*Academy Begins Here*/
