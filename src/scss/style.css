@@ -405,17 +405,47 @@ footer {
 
 footer img {
   width: 80px;
-  margin-bottom: 3em;
+  margin-bottom: 0.5em;
 }
 
 footer h4 {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
   color: #fff;
+  margin-bottom: 0.8em;
 }
 
 footer a {
   color: silver;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2em;
+}
+
+footer ul li {
+  margin-top: 0.8em;
+  font-size: 16px;
+}
+
+:fourth-child > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: hotpink;
 }
 
 /*Academy Begins Here*/
@@ -758,13 +788,37 @@ footer a {
     width: 30%;
   }
   footer {
-    padding: 30px 0 20px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3em 4.5em 3.5em 4.5em;
+  }
+  footer .item1 {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
   footer img {
-    width: 10%;
+    width: 120px;
+    margin-bottom: 0;
+  }
+  footer h4 {
+    font-size: 20px;
+  }
+  footer ul {
+    text-align: left;
+    margin-top: 0;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  footer ul li {
+    margin-top: 0.8em;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
