@@ -123,48 +123,99 @@ header .closebtn:hover {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding: 200px 0 250px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
 
 .section1 h1 {
-  padding: 0 20px;
   font-size: 50px;
-  color: white;
-}
-
-.section1 h1 span {
+  font-weight: 900;
+  margin-top: 1.5em;
   color: #24feb7;
 }
 
+.section1 h1 span {
+  color: white;
+}
+
 .section1 p {
-  margin: 15px 0;
-  font-size: 20px;
+  margin: 1.5em 0;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .section1 .btn {
   display: block;
   background-color: #24feb7;
-  width: 50%;
+  width: 30%;
   margin: auto;
   line-height: 03;
   color: #010544;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section1 .fab {
-  margin-top: 20px;
-  padding: 20px 0 0 20px;
+.section1 .store {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section1 .store a {
+  font-size: 18px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0.5em;
+}
+
+.section1 .store a .fab {
+  margin: 0 0.3em;
 }
 
 /*section1 ends */
 .section2 {
   width: 100%;
-  height: auto;
   padding: 40px 35px;
   text-align: center;
   background-color: #000917;
+  -webkit-transition: background 0.3s, ease;
+  transition: background 0.3s, ease;
 }
 
 .section2 .flexy {

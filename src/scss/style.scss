@@ -154,6 +154,11 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
+@mixin flex2_ {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
 
 header {
     display: flex;
@@ -214,64 +219,72 @@ header {
 
 .section1 {
     text-align: center;
-
     background: {
         image: url("../img/homepage-011-1.png");
         size: cover;
         attachment: fixed;
         repeat: no-repeat;
     }
-
-    padding: 200px 0 250px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: auto;
-
+    height: 100vh;
     h1 {
-        padding: 0 20px;
-
         font: {
             size: 50px;
+            weight: 900;
         }
-
-        color: $text-color;
-
+        margin-top: 1.5em;
+        color: $alt-color;
         span {
-            color: $alt-color;
+            color: $text-color;
         }
     }
 
     p {
-        margin: 15px 0;
+        margin:1.5em 0;
 
         font: {
-            size: 20px;
+            size: 18px;
+            weight:900;
         }
     }
 
     .btn {
         display: block;
         background-color: $alt-color;
-        width: 50%;
+        width: 30%;
         margin: auto;
         line-height: 03;
         color: $btn-color;
         border-radius: 10px;
+        @include flex2_();
+        
     }
-
-    .fab {
-        margin-top: 20px;
-        padding: 20px 0 0 20px;
+    .store{
+        margin-top: 1em;
+        @include flex2_();
+        a{
+            font-size: 18px;
+            font-weight: 700;
+            @include flex2_();            
+            margin:0 0.5em;
+            .fab{
+                margin: 0 0.3em;
+            }
+        }
     }
 }
 
 /*section1 ends */
 .section2 {
     width: 100%;
-    height: auto;
     padding: 40px 35px;
     text-align: center;
     background-color: $alt-bg-color;
-
+    transition: background 0.3s, ease;
     .flexy {
         margin-top: 70px;
 
