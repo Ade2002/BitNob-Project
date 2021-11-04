@@ -30,7 +30,7 @@ function HomePage() {
         </section>
         <section class="section2">
             <h1>
-                What makes us <span id="unique"> unique? </span>
+                What makes us <span> unique? </span>
             </h1>
             <div class="flexy">
                 <div class="unique">
