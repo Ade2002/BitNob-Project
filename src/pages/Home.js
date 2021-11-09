@@ -8,7 +8,7 @@ import demola from '../img/demola.jpg'
 function HomePage() {
     return <div>
         <section class="section1 fixed-background-attachment">
-            <div>
+            <div className='div'>
                 <h1>
                     Buy, Save & Invest
                     <span class="whiteh1"> In Bitcoin Easily! </span>
